@@ -536,7 +536,7 @@ module ActiveRecord
         end
 
         def create_table_definition(*args)
-          SQLServer::TableDefinition.new(*args)
+          SQLServer::TableDefinition.new(self, *args)
         end
 
       end
